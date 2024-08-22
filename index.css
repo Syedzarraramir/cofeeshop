@@ -9,7 +9,7 @@
     margin: 0;
 }
 body {
-    background-image: linear-gradient(rgba(255,255,255,0.395),rgba(255,255,255,0.395)), url(./images/background.jpg);
+    background-image: linear-gradient(rgba(255,255,255,0.395),rgba(255,255,255,0.395)), url(./images/Coffee\ espresso\ template1.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -117,6 +117,9 @@ nav {
 
 /* Mobile Phone */
 @media(max-width:420px){
+    body{
+        max-width: 420;
+    }
     #logo img{
         height: 50px;
         width: 50px;
