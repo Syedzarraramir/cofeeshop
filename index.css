@@ -31,14 +31,16 @@ nav {
 /* LOGO */
  #logo img{
     width: 80px;
-    height: 8px;
+    height: 80px;
     padding-left: 40px;
+    opacity: 50%;
 }
-/* anchor-tags */
+/* anchor-tags here we do padding right so therefore anchor tag is on right.*/
 .anchor-tags {
     margin-top: 20px;
     padding-right: 60px;
 }
+/* use to edit special a. */
 .anchor-tags a{
     color: rgb(75, 38, 20);
     background-color: #ffffff6b;
@@ -46,4 +48,44 @@ nav {
     text-align: center;
     text-decoration: none;
     padding: 12px 20px;
+}
+/* for small screens 1000px */
+@media(max-width:1000px){
+    #logo img{
+        width: 70px;
+        height: 70px;
+        padding-left: 30px;
+    }
+    .anchor-tags {
+        padding-right: 50px;
+    }
+    .anchor-tags a{
+        padding: 10px 10px;
+    }
+}
+/* Tabs */
+@media(max-width:780px){
+    #logo img{
+        height: 60px;
+        width: 60px;
+    }
+    .anchor-tags a{
+        font-size: 2.7vh;
+        padding: 5px;
+    }
+}
+/* Mobile Phone */
+@media(max-width:420px){
+    #logo img{
+        height: 50px;
+        width: 50px;
+        padding-left:10px ;
+    }
+    .anchor-tags{
+        padding-right: 10px;
+    }
+    .anchor-tags a{
+        padding: 5px 5px;
+        font-size: 1.6vh;
+    }
 }
