@@ -1,0 +1,32 @@
+/* Made for cofees */
+.cofee-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+
+
+}
+.cofee-container .cofee-cup{
+    width:190px;
+    height: 200px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+    background-image: linear-gradient(rgba(0,0,0,265),rgba(0,0,0,265)),url(./images/offer.jpg);
+    background-size: cover;    
+    color: white; 
+}
+.cofee-cup img{
+    width: 150px;
+    height: 130px;
+    position: relative;
+    top: -40px;
+    border-radius: 50%;
+}
+.cofee-cup h2{
+    margin-top: -15px ;
+}
+.cofee-cup p{
+    font-size: 13px;
+    padding: 15px;
+}
