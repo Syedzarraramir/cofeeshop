@@ -1,0 +1,47 @@
+/* styling for beans */
+.beans-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+
+}
+.beans-container div{
+    text-align: center;
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    border: 1px solid rgba(rgb(76, 0, 0), rgb(29, 44, 29), rgb(93, 93, 152), alpha);
+    box-shadow: 2px 2px 10px 10px rgba(rgb(76, 0, 0), rgb(29, 44, 29), rgb(93, 93, 152), alpha);
+
+}
+.beans-container div:hover {
+    transform: translateY(10px);
+    text-align: center;
+    width: 180px;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid rgba(rgb(76, 0, 0), rgb(29, 44, 29), rgb(93, 93, 152), alpha);
+    box-shadow: 2px 2px 10px 10px rgba(rgb(76, 0, 0), rgb(29, 44, 29), rgb(93, 93, 152), alpha);
+    cursor: pointer;
+
+}
+.beans-container img{
+    position: relative;
+    top: -130px;
+    width: 185px;
+}
+.beans-container p{
+    margin-top: -150px;
+}
+@media (max-width: 780px) {
+    .beans-container div {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 70%; /* Three columns on laptops */
+        gap: 10px;
+    }
+}
+#heading {
+    font-size: 50px;
+    justify-content: center;
+}

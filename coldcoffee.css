@@ -1,0 +1,120 @@
+/* for cold coffee */
+.cold-coffee-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 90px;
+    margin-top: 60px;
+
+
+}
+.cold-coffee-container .coffee-cup {
+    width: 220px;
+    height: 260px;
+    border: 5px solid white;
+    text-align: center;
+    background-color: rgba(185, 117, 83, 0.589);
+    transition: transform 0.4s ease-in 0.09s;
+}
+.coffee-cup:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+.coffee-cup img {
+    padding: 30px 0;
+    width: 100px;
+    height: 150px;
+}
+.cold-coffee-container .text-body {
+    background-color: white;
+    padding: 12px;
+}
+.coffee-cup .text-body h4 {
+    font-size: 3vh;
+    
+}
+/* 1000px */
+@media(max-width:1000px) {
+.cold-coffee-container   .coffee-cup {
+        height:190px
+  }
+  .coffee-cup img{
+    width: 150px;
+    height: 130px;
+  }
+  .coffee-cup h2{
+    margin-top: -15px;
+  }
+  .coffee-cup p{
+    font-size: 13px;
+    padding: 5px;
+  }
+  .coffee-cup h4 {
+  font-size: 2vh;
+  }
+
+}
+/* 780px */
+@media(max-width:780px){
+    .cold-coffee-container {
+        display: grid;
+        grid-template-columns: 30% 30%;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 50px;
+        gap: 30px;
+        
+
+    }
+    .coffee-cup {
+        width: 220px;
+        height: 255px;
+    }
+.cold-coffee-container img {
+        padding: 30px 40px;
+        width: 100px;
+        height: 150px;
+
+        
+}
+}
+@media(max-width:420px){
+    .cold-coffee-container{
+        display: grid;
+        grid-template-columns: 65%;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: -10px;
+        gap: 30px;
+    }
+    .coffee-cup {
+        width: 220px;
+        height: 250px;
+    }
+    .coffee-cup img{
+        padding: 30px 40px;
+        width: 100px;
+        height: 150px; 
+    }
+}
+@media (min-width: 1000px) {
+    .cold-coffee {
+        grid-template-columns: repeat(3, 1fr); /* Three columns on laptops */
+    }
+}
+/* chatgpt help */
+.cold-coffee {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns on laptops */
+     gap: 110px; 
+    /* justify-content: space-evenly; */
+}
+@media (max-width: 780px) {
+    .cold-coffee {
+        grid-template-columns: repeat(2, 1fr); /* Three columns on laptops */
+    }
+}
+@media (max-width: 600) {
+    .cold-coffee {
+        grid-template-columns: repeat(1, 0fr); /* Three columns on laptops */
+    }
+}

@@ -81,7 +81,10 @@
 
 /* Styles for laptops and desktops (above 1000px) */
 @media (min-width: 1000px) {
+    body{
+        width: fit-content;
+    }
     .cofee-container {
         grid-template-columns: repeat(3, 1fr); /* Three columns on laptops */
     }
-} */
+} 
