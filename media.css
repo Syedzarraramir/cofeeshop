@@ -1,0 +1,83 @@
+/* here i will do some changes in gridients 
+/* for laptops */
+/* for small screens 1000px */
+/* @media(max-width:800px){
+    .cofee-container {
+        display: grid;
+        grid-template-columns: 3;
+        grid-template-rows: 4;
+        gap: 30px;
+        margin-top: 30px;
+        margin-bottom: 70px;
+    }
+    .cofee-container .cofee-cup { 
+        width: 250px;
+        height: 220px;
+    }
+    .cofee-cup img{
+        width: 120px;
+        height: 150px;
+    }
+    
+        .cofee-cup h2 {
+            margin-top: 30px;
+            margin-bottom: 70px;
+        }
+        .cofee-cup p{
+            padding: 10px;
+        }
+    } */
+     /* Base styles */
+.cofee-container {
+    text-align: center;
+    margin: 100px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+.cofee-container .cofee-cup { 
+    width: 250px;
+    height: 220px;
+}
+.cofee-cup img{
+    width: 120px;
+    height: 150px;
+}
+.cofee-cup h2 {
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+.cofee-cup p{
+    padding: 10px;
+}
+
+/* Styles for tablets (600px to 1000px) */
+@media (min-width: 600px) and (max-width: 1000px) {
+    .cofee-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
+    }
+}
+
+/* Styles for laptops and desktops (above 1000px) */
+@media (min-width: 1000px) {
+    .cofee-container {
+        grid-template-columns: repeat(3, 1fr); /* Three columns on laptops */
+    }
+}
+
+/* Hover effect */
+.cofee-cup:hover {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    background-image: linear-gradient(rgba(0,0,0,265),rgba(0,0,0,265)),url(./images/offer.jpg);
+    background-size: cover;    
+    color: red, white, pink; 
+    cursor: pointer;
+    transition: 2s ease-in-out all;
+}

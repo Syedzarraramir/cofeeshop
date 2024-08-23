@@ -1,3 +1,4 @@
+
 /* Made for cofees */
 .cofee-container {
     display: flex;
@@ -32,11 +33,14 @@
 }
 /* grid */
 .cofee-container {
-    display: grid;
-    grid-template-columns: 1;
-    gap: 30px;
-    margin-top: 30px;
-    margin-bottom: 70px;
+    .cofee-container {
+        margin-left: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-top: 30px;
+        margin-bottom: 70px;
+    }
 }
 .cofee-container .cofee-cup { 
     width: 250px;
@@ -68,3 +72,16 @@
     
 }
 
+/* Styles for tablets (600px to 1000px) */
+@media (min-width: 600px) and (max-width: 1000px) {
+    .cofee-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
+    }
+}
+
+/* Styles for laptops and desktops (above 1000px) */
+@media (min-width: 1000px) {
+    .cofee-container {
+        grid-template-columns: repeat(3, 1fr); /* Three columns on laptops */
+    }
+} */
