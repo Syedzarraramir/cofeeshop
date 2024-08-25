@@ -45,6 +45,7 @@ nav {
 .anchor-tags {
     margin-top: 20px;
     padding-right: 60px;
+    position: sticky;
 }
 /* use to edit special a. */
 .anchor-tags a{
@@ -253,3 +254,7 @@ h1 em{
         to {right: 570px;}
     }
 }
+/* for to fixed navbar */
+/* .forfixed {
+    position: sticky;
+} */
